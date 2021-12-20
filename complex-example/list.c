@@ -23,7 +23,7 @@ struct Node* newNode(int key, char* item, double price) {
 void printList(struct Node* head) {
     struct Node* current = head;
     while (current) {
-        printf("%d, %s, %.2f\n", current->key, current->item, current->price);
+        printf("%d: %s - $%.2f\n", current->key, current->item, current->price);
         current = current->next;
     }
 }

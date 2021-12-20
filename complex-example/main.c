@@ -40,7 +40,7 @@ int main() {
                     char* itemName = getName(items, itemNum);
                     double itemPrice = getPrice(items, itemNum);
 
-                    printf("Select: %s - $%.2f\n", itemName, itemPrice);
+                    printf("Selected: %s - $%.2f\n", itemName, itemPrice);
                 } else {
                     printf("Invalid Choice\n");
                 }
@@ -54,11 +54,11 @@ int main() {
                 printf("Enter item price: ");
                 scanf("%lf", &price);
 
-                printf("%s, %.2f\n", str, price);
-
                 itemCount += 1;
 
                 append(&items, itemCount, str, price);
+
+                printf("Item added: %s - $%.2f\n", str, price);
                 
                 break;
 
